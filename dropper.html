@@ -36,14 +36,6 @@ top:1px;
 
 <script>
 	function chall() {
-	
-		var arr = [];
-    arr = arr.concat(defaultChallenges, userConfig.challenges.custom);
-    var challenge = getRandomItem(arr);
-    
-  alert[('#txtChallengeName').text(challenge.name)
-    ('#txtChallengeDesc').text(challenge.desc)];
-		
 	var defaultChallenges = [
     {
         name : 'Pistols only',
@@ -114,6 +106,10 @@ top:1px;
         desc : 'Win without directly harming any other players.'
     },
 ];
+		
+		var chl = defaultChallenges[Math.floor(Math.random() * defaultChallenges.length)]; 
+  alert(chl);
+  document.getElementById("chl").textContent = chl;
 	}
 	
 	

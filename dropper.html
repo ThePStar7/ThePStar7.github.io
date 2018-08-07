@@ -27,19 +27,40 @@ top:1px;
 }
 </style>
 <title>Dropper</title>
-<body background="https://www.hna.de/bilder/2018/07/17/10040184/902016895-fortnite-epic-games-battle-royale-1458.jpg"
+<body background=""
 <h1>Dropper</h1>
 
 
-<button class="myButton" type="button" onclick="yourmomgay()">
-Test roll </button>
+<button class="myButton" type="button" onclick="droppin()">Where am i dropping ?</button>
 
 <script>
-function yourmomgay() {
+function droppin() {
 
-var words = ["monitor", "program", "application", "keyboard", "javascript", "gaming", "network"];
+var words = [
+    'Dusty Divot',
+    'Fatal Fields',
+    'Flush Factory',
+    'Greasy Grove',
+    'Haunted Hills',
+    'Junk Junction',
+    'Lazy Links',
+    'Lonely Lodge',
+    'Loot Lake',
+    'Lucky Landing',
+    //'Moisty Mire',
+    'Paradise Palms',
+    'Pleasant Park',
+    'Retail Row',
+    'Risky Reels',
+    'Salty Springs',
+    'Shifty Shafts',
+    'Snobby Shores',
+    'Tilted Towers',
+    'Tomato Town',
+    'Wailing Woods'
+];
   var word = words[Math.floor(Math.random() * words.length)]; 
-  alert(word);
+  alert("You're dropping at" +word+);
   document.getElementById("word").textContent = word;
 }
 </script>

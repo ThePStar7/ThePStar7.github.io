@@ -39,7 +39,7 @@ top:1px;
 <br>
 <br>
 <br>
-<button class="myButton" type="button" onclick="chall()">Give me a challenge please.</button>
+<button class="myButton" type="button" onclick="chall()">Give me a challenge</button>
 
 <script>
 	function chall() {
@@ -65,7 +65,7 @@ top:1px;
 ];
 		
   var chl = defaultChallenges[Math.floor(Math.random() * defaultChallenges.length)]; 
-  alert(chl);
+  alert(chl, 'Your Challenge: ');
   document.getElementById("chl").textContent = chl;
 }
 	
